@@ -1,0 +1,18 @@
+basicDiscovery
+python basicDiscovery.py --endpoint aazb9d7j4pzxg-ats.iot.us-east-2.amazonaws.com --rootCA AmazonRootCA1.pem --cert 4c888f21f8950a9fc1a8a0520e6d0c34c3f3694382a11f651a7a345ead8fc6c5-certificate.pem.crt --key 4c888f21f8950a9fc1a8a0520e6d0c34c3f3694382a11f651a7a345ead8fc6c5-private.pem.key --thingName HelloWorld_Publisher --topic 'hello/world/pubsub' --mode publish --message "Hello, World! Sent from HelloWorld_Publisher"
+python basicDiscovery.py --endpoint aazb9d7j4pzxg-ats.iot.us-east-2.amazonaws.com --rootCA AmazonRootCA1.pem --cert bdb40ff288390de17d74870500c417161aca4d023439896f97539ddf0c28f29d-certificate.pem.crt --key bdb40ff288390de17d74870500c417161aca4d023439896f97539ddf0c28f29d-private.pem.key --thingName HelloWorld_Subscriber --topic 'hello/world/pubsub' --mode subscribe
+
+pub_emission
+python pub_emission.py --endpoint aazb9d7j4pzxg-ats.iot.us-east-2.amazonaws.com --rootCA AmazonRootCA1.pem --cert 4c888f21f8950a9fc1a8a0520e6d0c34c3f3694382a11f651a7a345ead8fc6c5-certificate.pem.crt --key 4c888f21f8950a9fc1a8a0520e6d0c34c3f3694382a11f651a7a345ead8fc6c5-private.pem.key --thingName HelloWorld_Publisher --mode publish
+
+private IP
+172.31.40.243
+
+endpoint
+aazb9d7j4pzxg-ats.iot.us-east-2.amazonaws.com
+
+pub cert ID
+4c888f21f8950a9fc1a8a0520e6d0c34c3f3694382a11f651a7a345ead8fc6c5
+
+sub cert ID
+bdb40ff288390de17d74870500c417161aca4d023439896f97539ddf0c28f29d
