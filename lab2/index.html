@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>PiCar Control</title>
+</head>
+
+<script src="index.js"></script>
+
+<body onload="setup_connection()">
+    <div id="container">
+
+        <div id="gauge_cluster">
+            <p id="battery_label">Battery level:</p>
+            <!-- <div id="battery"></div> -->
+            <p id="temperature_label">Temperature:</p>
+            <!-- <div id="temperature"></div> -->
+        </div>
+
+        <div id="video_cluster">
+            <video controls>
+                <!-- <img src="https://cdn.dribbble.com/users/1782673/screenshots/4683964/media/b52ee5c60cf4c273bd85b832986b2ae6.gif"
+                    alt="gif of puppy loading the video stream"> -->
+            </video>
+        </div>
+
+        <div id="controls_cluster" class="centered">
+            <button type="button" onmousedown="directions(this)" onmouseup="stop()" id="forward">⮝</button>
+            <br>
+            <button type="button" onmousedown="directions(this)" onmouseup="stop()" id="left">⮜</button>
+            <button style="visibility: hidden;"></button>
+            <button type="button" onmousedown="directions(this)" onmouseup="stop()" id="right">⮞</button>
+            <br>
+            <button type="button" onmousedown="directions(this)" onmouseup="stop()" id="backward">⮟</button>
+        </div>
+
+    </div>
+
+    <p id="info_dumping_ground"></p>
+</body>
+
+</html>

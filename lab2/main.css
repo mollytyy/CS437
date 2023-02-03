@@ -1,0 +1,77 @@
+html {
+    font-family: sans-serif;
+}
+
+/* Try 800px as the min width */
+
+#full_page {
+    display: flex;
+    flex-direction: column;
+    flex: 1 auto;
+}
+
+#container {
+    background-color: black;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: row;
+    flex: 1 2 1;
+}
+
+#gauge_cluster {
+    float: left;
+    width: 25%;
+    background-color: honeydew;
+
+    display: grid;
+    grid-auto-flow: row;
+
+    overflow: auto;
+}
+
+#video_cluster {
+    float: left;
+    width: 50%;
+    background-color: aliceblue;
+}
+
+#controls_cluster {
+    float: left;
+    width: 25%;
+    background-color: wheat;
+}
+
+@media screen and (max-width: 800px) {
+    #container {
+        flex-direction: column;
+    }
+
+    #gauge_cluster {
+        width: 100%;
+        grid-auto-flow: column;
+    }
+
+    #video_cluster {
+        width: 100%;
+    }
+
+    #controls_cluster {
+        width: 100%;
+    }
+}
+
+.centered {
+    justify-content: center;
+    align-items: center;
+}
+
+
+#dir_controls {
+    background-color: red;
+}
+
+button {
+    border-radius: 50%;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "tutorial",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^10.1.6"
+  },
+  "dependencies": {},
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nsheikh2/cs437-lab2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nsheikh2/cs437-lab2/issues"
+  },
+  "homepage": "https://github.com/nsheikh2/cs437-lab2#readme"
+}
